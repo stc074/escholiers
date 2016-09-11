@@ -1,0 +1,6 @@
+setENV PHP_VER 5
+Options -Indexes
+#
+Options +FollowSymlinks
+#
+Redirectmatch permanent ^/$ http://www.lesescholiers.fr/fr/

@@ -1,0 +1,60 @@
+<?php
+class Objet {
+    
+    protected $dbh;
+    protected $errorMsg;
+    protected $test;
+
+
+    function __construct() {
+        if(!defined("HOSTNAME"))
+            define("HOSTNAME", "mysql5-11.perso");
+        if(!defined("DBNAME"))
+            define("DBNAME", "leseschobescho");
+        if(!defined("DBUSER"))
+            define ("DBUSER", "leseschobescho");
+        if(!defined("DBPASS"))
+            define("DBPASS", "kv5p3Xz6U");
+        $this->errorMsg="";
+        $this->test=0;
+    }
+    
+    function __destruct() {
+        $this->dbh=NULL;
+    }
+
+    protected function dbConnect() {
+        try {
+            $this->dbh=new PDO('mysql:host='.HOSTNAME.';dbname='.DBNAME, DBUSER, DBPASS);
+    } catch (PDOException $e) {
+        echo "Erreur lors de la connexion à la base de données : ".$e->getMessage()."<br/>";
+    }
+    }
+    
+    protected function codeHTML($texte) {
+        $texte=  str_replace('<script', '&lt;script', $texte);
+        $texte=  str_replace('<%', '&lt;%', $texte);
+        $texte=  str_replace('<?php', '&lt;?php', $texte);
+        return $texte;
+    }
+    
+    protected function codeURL($titre, $id) {
+        return urlencode("page-".$id."-".strtolower(str_replace((' '), '-', $titre)).".html");
+    }
+
+
+    function getErrorMsg() {
+        return $this->errorMsg;
+    }
+    
+    public function getTest() {
+        return $this->test;
+    }
+    
+    public function blank() {
+        $this->errorMsg="";
+        $this->test=0;
+    }
+}
+
+?>

@@ -1,0 +1,241 @@
+/* 
+    Document   : style
+    Created on : 4 oct. 2012, 18:28:16
+    Author     : pj
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+@font-face {
+    font-family: "customFont";
+    src: url("../fonts/ftltlt.ttf");
+}
+
+body {
+    background-color: #333333;
+    color: #ddae70
+}
+div.marginAuto {
+    width: 500px;
+    margin: auto;
+}
+div#page {
+    width: 1283px;
+    height: 768px;
+    background-image: url("../images/cadre2.jpg");
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+div#logo {
+    width: 504px;
+    height: 82px;
+    background-image: url("../images/lesescholiers2.gif");
+    position: relative;
+    top: -3px;
+    left: 390px;
+    cursor: pointer;
+}
+
+div#section {
+    width: 950px;
+    height: 580px;
+    margin-left: 170px;
+    color: #F1F1E3;
+}
+
+div#section a {
+    text-decoration: none;
+    color: #8B8B9F;
+}
+
+div#section a:hover {
+    text-decoration: underline;
+    color: #AA2222;
+}
+
+div#section p, div {
+    font-family: "customFont";
+}
+
+div#section h1 {
+    color: #DAD9D9;
+}
+
+div#section div.info {
+    width: 70%;
+    border: solid 1px #c1bdc4;
+    background-color: #cbd2d7;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
+    color: #333333;
+}
+
+div#section div.error {
+    width: 70%;
+    background-color: #f0bfc2;
+    color: #333333;
+    font-weight: bold;
+    border: solid 1px #AA2222;
+    border-radius: 7px;
+    padding: 5px 5px 5px 5px;
+}
+
+div#section div.calcMidLeft {
+    width: 70%;
+    margin: auto;
+}
+
+div#section div.hidden {
+    display: none;
+}
+
+div#section li.inLine {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#section div#mediaspace {
+    width: 500px;
+    margin: auto;
+}
+
+div#section div.down {
+    background-image: url("../immages/arrow_down.png");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div#section div#mapCanvas {
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    border-radius: 7px;
+}
+
+div#section div.inlineBlock {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div#section img#captcha {
+    border: solid 1px #c1bdc4;
+    border-radius: 10px;
+}
+
+div#section .red {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+ul.personnes li {
+    margin-top: 10px;
+}
+
+div#formLDO {
+    display: none;
+}
+
+div#signLDO h2 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+div#section div.msgLdo {
+    border: solid 1px #cccccc;
+    border-radius: 7px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div#section div.msgLdo p {
+    font-size: 1em;
+    color: #cccccc;
+}
+
+div#section div.pagesLdo {
+    text-align: center;
+}
+
+div#section div.pagesLdo span.pageLdo {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px 5px 5px 5px;
+}
+
+div#section div.msgLdo h1 {
+    font-size: 0.9em;
+    color: #eeeeee;
+}
+/* FORM */
+form {
+    font-family: Arial, serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+fieldset {
+    border: solid 1px #8F8F73;
+    border-radius: 7px;
+}
+
+legend {
+    font-weight: lighter;
+    color: #aac;
+    font-family: "customFont";
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: #f86f57;
+}
+
+input[type='text'], textArea {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px #dddddd;
+    border-radius: 3px;
+    color: #eeeeee;
+}
+/* Tableau */
+div.table {
+    display: table;
+}
+
+div.tr {
+    display: table-row;
+}
+
+div.td {
+    display: table-cell;
+}
+
+div.cell {
+    width: 50%;
+}
+
+dic.cell2 {
+    width: 100%;
+}
+
+div.tableau {
+    width: 70%;
+}

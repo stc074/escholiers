@@ -1,0 +1,48 @@
+/* 
+    Document   : stylePers
+    Created on : 28 nov. 2012, 17:48:02
+    Author     : pj
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+@font-face {
+    font-family: "customFont";
+    src: url("../fonts/ftltlt.ttf");
+}
+body {
+}
+
+div#section {
+    padding: 5px 5px 5px 5px;
+    font-size: 1em;
+    font-family: "customFont", sans-serif;
+    background-color: #E0DFE3;
+    width: 675px;
+    height: 505px;
+    margin: auto;
+}
+
+div#section h1 {
+    color: #333333;
+}
+
+div#section h2 {
+    color: #666666;
+}
+
+div#section div.vignette {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+div#section div.vignette img {
+    border: solid 1px #333333;
+    border-radius: 7px;
+}
+

@@ -1,0 +1,28 @@
+10
+
+dir
+0
+http://localhost/svn/projet1/lesescholiers/videos
+http://localhost/svn/projet1
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+33b881c3-f846-4b9a-bc92-a99dfa5a2bdc
+
